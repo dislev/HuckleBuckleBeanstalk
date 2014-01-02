@@ -48,7 +48,7 @@ $(document).ready(function(){
 			ResultMessage('Invalid non-integer input, please enter an integer between 0 - 100', 'black', 5, 2000);
 		}
 		else if(expected != null && (expected < 100 && expected > 0)){
-			if(Math.abs(prev_Guess - actual) == Math.abs(expected - actual)){
+			if(prev_Guess != null && prev_Guess == expected){
 				ResultMessage('same number was entered consecutively...', 'brown', 5, 200);
 				prev_Guess = expected;
 			}
