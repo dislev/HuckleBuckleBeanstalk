@@ -4,7 +4,7 @@ $(document).ready(function(){
 	var guessCount = 1;
 	var prev_Guess;
 	
-	alert(randValue);
+	//alert(randValue);
 	
 	$('#submitButton').click(function(){
 		userGuess = $('#guess').val();
