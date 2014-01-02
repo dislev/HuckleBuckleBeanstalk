@@ -5,28 +5,25 @@
       <title>Huckle Buckle Beanstalk</title>
       <link rel="stylesheet" type="text/css" href="style.css"/>
       <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+      <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
       <script type="text/javascript" src="app.js"></script>
    </head>
    <body>
       <div id="headers">
-         <h1 id='title'>HOT or COLD</h1>
+         <h1 id='title'><span style='color:red'>HOT</span> or <span style='color:navy'>COLD</span></h1>
       </div>
       <div id="content">
          <h2>The computer has selected a number between 1 and 100...</h2>
-         <div id='gameBox'>
+            <div id='gameBox'>
          	<p>What number is the computer thinking?</p>
          	<div id='inputs'>
-         	   <input type="number" id="guess" maxlength="3" autocomplete="off">
-         	   <input type='button' value="Guess!" id='submitButton'>
-         	</div>
+         	   <input id="guess" maxlength="3" autocomplete="off">
+         	   <div id='submitButton'>
+         	      <input type='button' value="Guess!">
+         	   </div>
+            </div>
+            <div id="results"></div>
          </div>
-      </div>
-      <div id="results">
-      	 <h1>too low</h1>
-      	 <h1>too high</h1>
-         <h1>getting colder!</h1>
-         <h1>getting hotter!</h1>
-         <h1>CORRECT!!!</h1>
       </div>
    </body>
 </html>
